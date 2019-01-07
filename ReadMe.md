@@ -28,9 +28,15 @@
 1. Run command ng serve -o under BSCMS-app folder
 
 
-## Dependencies :
+### Dependencies :
 1. npm install @angular/cli
 1. npm install nodemon
 1. npm install nodemailer
 1. npm install ng-pick-datetime --save
 1. npm install jaspero/ng-alerts --save
+
+### Technologies used :
+* HTML
+* SCSS
+* Angular 6
+* Node JS
