@@ -1,0 +1,389 @@
+//colors
+$color_mine_shaft_approx: #333;
+$white: white;
+$color_woodsmoke_approx: #111;
+$color_bright_red_approx: #b30000;
+$black_70: rgba(0,0,0,0.7);
+$black_20: rgba(0, 0, 0, 0.2);
+$black_19: rgba(0, 0, 0, 0.19);
+$color_blue_ribbon_approx: rgb(4, 108, 243);
+$red_50: rgba(255, 0, 0, 0.5);
+$red: red;
+$color_alto_approx: #ddd;
+$concrete: #f2f2f2;
+$color_apple_approx: #4caf50;
+$color_well_read_approx: #b73336;
+$black_10: rgba(0, 0, 0, 0.1);
+$color_dodger_blue_approx: #3399ff;
+$gray: gray;
+$color_alabaster_approx: #f9f9f9;
+$black: black;
+$seashell: #f1f1f1;
+$color_chicago_approx: #595959;
+
+//fonts
+$font_0: sans-serif;
+$font_1: Trebuchet MS;
+$font_2: Arial;
+$font_3: Helvetica;
+
+//urls
+$url_0: url(src/assets/homePage_header.png);
+
+@import ' ~@angular/material/prebuilt-themes/indigo-pink.css';
+ul {
+	list-style-type: none;
+	height: 44px;
+	overflow: hidden;
+	position: fixed;
+	top: 118px;
+	background-color: $color_mine_shaft_approx;
+	width: 99%;
+	padding-left: 1px;
+}
+li {
+	float: left;
+	a {
+		display: block;
+		color: $white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		&:hover:not(.active) {
+			background-color: $color_woodsmoke_approx;
+		}
+	}
+}
+.active {
+	background-color: $color_bright_red_approx;
+}
+.header {
+	height: 13vh;
+	margin-top: -184px;
+	background-image: linear-gradient(to right, #ffb3b3, #9207078a), $url_0;
+	background-size: cover;
+	background-position: top;
+	position: fixed;
+	width: 99%;
+}
+.logo {
+	height: 100px;
+	width: auto;
+	padding: 10px;
+	display: block;
+	margin: 0 auto;
+}
+.example-container {
+	display: flex;
+	flex-direction: column;
+	width: 46%;
+	margin-right: 23rem;
+	margin-top: 12rem;
+	border: $black_70;
+	margin-left: 4rem;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 4px 8px 0 $black_20, 0 6px 20px 0 $black_19;
+	text-align: center;
+	display: block;
+	position: relative;
+	padding: 16px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 4px;
+}
+.heading--primary {
+	font-size: 3rem;
+	font-family: $font_0;
+	font-weight: 600;
+	letter-spacing: 1rem;
+	margin-top: -8rem;
+	margin-left: 47rem;
+}
+.heading--sub {
+	font-weight: 600;
+	font-family: $font_0;
+	font-size: 3rem;
+	margin-top: -1rem;
+	margin-left: 39rem;
+	margin-bottom: 2rem;
+}
+.heading--sub-sub {
+	font-family: $font_0;
+}
+.nav-signup-user {
+	font-weight: bold;
+	font-family: $font_0;
+	padding-left: 18rem;
+	color: $color_blue_ribbon_approx;
+}
+.nav-signup-hospital {
+	font-weight: bold;
+	font-family: $font_0;
+	padding-left: 23rem;
+	color: $color_blue_ribbon_approx;
+}
+.nav-forgotPassword {
+	padding-left: 23rem;
+	font-weight: bold;
+	font-family: $font_0;
+	color: $color_blue_ribbon_approx;
+}
+.login-alert {
+	border-style: groove;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.4rem;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	background-color: $red_50;
+}
+.auth-error {
+	font-family: $font_0;
+	color: $red;
+	font-weight: 300;
+	text-align: left;
+	padding-left: 1rem;
+}
+.btn-register {
+	padding-right: 17rem;
+}
+.btn-register-logIn {
+	margin-top: -36px;
+	margin-left: 1rem;
+}
+.userDetails {
+	position: absolute;
+	border: thin;
+	z-index: -1;
+	margin-left: 1px;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	display: block;
+	text-align: center;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 4px 8px 0 $black_20, 0 6px 20px 0 $black_19;
+	padding-right: 5rem;
+	padding-left: 2rem;
+	margin-top: 119px;
+}
+#userHomePage {
+	font-family: $font_0;
+	font-size: 20px;
+	text-align: left;
+}
+.homePage {
+	position: relative;
+	top: 65px;
+}
+#userDetails {
+	margin: auto;
+	font-size: 20px;
+	text-align: left;
+	float: right;
+	margin-left: 15px;
+	margin-top: -3px;
+}
+#customers {
+	font-family: $font_1, $font_2, $font_3, $font_0;
+	border-collapse: collapse;
+	width: 50%;
+	float: right;
+	margin-top: 12px;
+	td {
+		border: 1px solid $color_alto_approx;
+		padding: 8px;
+	}
+	th {
+		border: 1px solid $color_alto_approx;
+		padding: 8px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		text-align: left;
+		background-color: $color_apple_approx;
+		color: $white;
+	}
+	tr {
+		&:nth-child(even) {
+			background-color: $concrete;
+		}
+		&:hover {
+			background-color: $color_alto_approx;
+		}
+	}
+}
+#personalDetails {
+	text-align: center;
+	font-family: $font_0;
+	font-size: 30px;
+	font-weight: bold;
+}
+table {
+	width: 45%;
+	float: right;
+	margin-top: 1px;
+}
+#tablename {
+	font-family: $font_0;
+	font-size: 30px;
+	font-weight: bold;
+}
+.table-header {
+	margin-top: 72px;
+	width: 43.5%;
+	padding-left: 12px;
+	font-family: $font_0;
+	font-size: 35px;
+	background-color: $color_well_read_approx;
+	font-weight: bold;
+	border: solid;
+	color: $white;
+	float: right;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 1px 2px 0 $black_20, 0 3px 4px 0 $black_19;
+}
+.user-header {
+	margin-top: 72px;
+	padding-left: 12px;
+	margin-left: 0;
+	width: 35.5%;
+	font-family: $font_0;
+	font-size: 35px;
+	background-color: $color_well_read_approx;
+	font-weight: bold;
+	border: solid;
+	color: $white;
+	float: left;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 1px 2px 0 $black_20, 0 3px 1px 0 $black_10;
+}
+#footer {
+	margin-bottom: 10px;
+}
+.mat-elevation-z8-table {
+	margin-top: 37px;
+	width: 65%;
+	margin-top: -35px;
+	margin-right: -709px;
+}
+.mat-header-cell {
+	font-family: $font_0;
+	font-size: 18px;
+	padding: -3px;
+	font-weight: 800;
+}
+.btn-searchPage {
+	background-color: $color_dodger_blue_approx;
+	border: none;
+	color: $white;
+	padding: 14px 18px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 8.4px;
+	cursor: pointer;
+	font-weight: bold;
+	margin-left: 50px;
+}
+.searchZipCode {
+	padding: 8px 24px;
+	border-color: $white;
+	border: groove;
+	text-align: center;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 4px;
+}
+.dropbtn {
+	padding: 8px 75px;
+	border-color: $white;
+	color: $gray;
+	border: groove;
+	text-align: center;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 4px;
+	background-color: $white;
+	cursor: pointer;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+	&:hover {
+		.dropdown-content {
+			display: block;
+		}
+		.dropbtn {
+			background-color: $color_alto_approx;
+		}
+	}
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: $color_alabaster_approx;
+	min-width: 160px;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 8px 16px 0 $black_20;
+	z-index: 1;
+	a {
+		color: $black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		&:hover {
+			background-color: $seashell;
+		}
+	}
+}
+.searchDonorBar {
+	display: flex;
+	flex-direction: column;
+	width: 53%;
+	margin-right: 23rem;
+	margin-top: 12rem;
+	border: $black_70;
+	margin-left: -28px;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	text-align: center;
+	display: block;
+	position: relative;
+	padding: 16px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 4px;
+}
+.mapSearch {
+	border: solid;
+	padding: 6px 12px;
+	margin-top: 50px;
+	margin-left: 4rem;
+	width: 45%;
+	padding-bottom: 500px;
+}
+.table-btn {
+	background-color: $color_chicago_approx;
+	border: none;
+	color: $white;
+	padding: 6px 7px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-left: -1rem;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 8.4px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.example-card mat-card {
+	display: block;
+	margin-left: 21rem;
+	margin-right: 40rem;
+	text-align: center;
+	justify-content: center;
+}
+.mat-raised-button.mat-primary {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
